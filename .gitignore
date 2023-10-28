@@ -1,5 +1,5 @@
 ### ------------------------- Flutter.gitignore ------------------------ ###
-
+lib/utils/.globals.dart
 # Miscellaneous
 *.class
 #*.lock
