@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter_operations_p/models/auth_response.dart';
-import 'package:flutter_operations_p/utils/globals.dart';
+import 'package:flutter_operations_p/utils/.globals.dart';
 import 'package:http/http.dart' as http;
 
 class LoginApiService {

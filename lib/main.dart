@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_operations_p/ui/pages/login/login.dart';
+import 'package:flutter_operations_p/router/app_routes.dart';
+import 'package:flutter_operations_p/ui/pages/home/home_screen.dart';
+import 'package:flutter_operations_p/ui/pages/login/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,6 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      routes: AppRoutes.getAppRoutes(),
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -32,7 +35,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const LoginScreen()
+      home: HomeScreen()
     );
   }
 }
